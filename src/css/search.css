@@ -1,0 +1,180 @@
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Increased gap */
+    padding: 15px; /* Increased padding */
+    background-color: #2f3136;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px; /* Larger font size */
+}
+
+.search-icon {
+    color: #e0e0e0;
+    font-size: 30px; /* Increased icon size */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.search-icon:hover {
+    color: #7289da;
+}
+
+.search-bar-container {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+}
+
+.search-bar-container.active {
+    width: 50%;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #40444b;
+    background-color: #202225;
+    color: #e0e0e0;
+    font-size: 16px; /* Increased font size */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.search-bar-container.active .search-bar {
+    opacity: 1;
+}
+
+.search-bar::placeholder {
+    color: #b9bbbe;
+}
+
+.search-actions {
+    display: flex;
+    gap: 15px; /* Increased gap */
+    margin-left: auto;
+}
+
+.admin-buttons {
+    display: flex;
+    gap: 15px; /* Increased gap */
+}
+
+.action-button {
+    padding: 12px 18px; /* Increased padding */
+    border: none;
+    border-radius: 4px;
+    background-color: #7289da;
+    color: #fff;
+    font-size: 16px; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #5b6eae;
+}
+
+.add-button {
+    background-color: #4caf50;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.edit-button {
+    background-color: #ffa500;
+}
+
+.edit-button:hover {
+    background-color: #e69500;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+.release-button {
+    background-color: #2196f3;
+}
+
+.release-button:hover {
+    background-color: #1e88e5;
+}
+
+.modal-form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.modal-form-control {
+    width: 100%;
+    padding: 1rem; /* Increased padding */
+    background: inherit;
+    border: 1px solid #7289da;
+    border-radius: 5px;
+    font-size: 1.1rem; /* Increased font size */
+    outline: none;
+    color: #dcddde;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.modal-form-control:focus {
+    border-color: #5865f2;
+    box-shadow: 0 0 5px rgba(88, 101, 242, 0.7);
+}
+
+.modal-form-label {
+    position: absolute;
+    top: -0.8rem; /* Adjusted position */
+    left: 1.2rem; /* Adjusted position */
+    background: #36393f;
+    padding: 0 0.4rem;
+    font-size: 1rem; /* Increased label size */
+    color: #7289da;
+    transition: all 0.3s ease;
+}
+
+.modal-form-control:focus + .modal-form-label,
+.modal-form-control:not(:placeholder-shown) + .modal-form-label {
+    color: #99aab5;
+}
+
+.modal-submit-button {
+    background: #7289da;
+    color: #ffffff;
+    border: none;
+    padding: 1rem; /* Increased padding */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem; /* Increased font size */
+    font-weight: bold;
+    transition: background 0.3s ease;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 1.5rem;
+}
+
+.modal-submit-button:hover {
+    background: #5865f2;
+}
+
+.modal-placeholder {
+    color: #a3a7b2;
+    font-size: 1.1rem; /* Increased placeholder font size */
+}
